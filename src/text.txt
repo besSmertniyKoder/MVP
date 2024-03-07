@@ -1,0 +1,4 @@
+mvc - model, view, controller -> backend
+mvp - model,view, presenter -> desktop
+view -> controller -> model
+model -> controller -> view
