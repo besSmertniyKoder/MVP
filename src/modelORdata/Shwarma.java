@@ -1,4 +1,4 @@
-package model;
+package modelORdata;
 
 public class Shwarma {//описывает, не содержит логику
    private int cost;

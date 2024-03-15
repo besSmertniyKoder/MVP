@@ -1,9 +1,9 @@
-package model;
+package modelORdata;
 
 import java.util.ArrayList;
 
 public class Orders {
-    public ArrayList<Shwarma> arrayList;
+    private ArrayList<Shwarma> arrayList;
 
     public Orders() {
         arrayList = new ArrayList<>();

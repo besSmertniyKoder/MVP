@@ -1,34 +1,25 @@
 package controller;
 
-import model.Orders;
-import model.Shwarma;
-
-import java.util.ArrayList;
+import modelORdata.Shwarma;
+import service.StoreService;
 
 public class OnlineStoreController {
-   private Orders orders;
+    private StoreService storeService = new StoreService();
 
-    public OnlineStoreController() {
-        orders = new Orders();
+    public OnlineStoreController() {}
+
+    public void addOrder(Shwarma shwarma) {
+
+        storeService.addOrder(shwarma);
+
     }
 
-    public void addOrder(Shwarma shwarma){
+    public void seeOrders() {
 
-       orders.add(shwarma);
-       System.out.println("добавили в onlineStore " + shwarma);
-
-   }
-   public void seeOrders(){
-
-      orders.getArrayList();
+        storeService.seeOrders();
 
 
-   }
-
-    @Override
-    public String toString() {
-        return "OnlineStoreController{" +
-                "orders=" + orders +
-                '}';
     }
+
+
 }
