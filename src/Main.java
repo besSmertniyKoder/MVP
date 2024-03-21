@@ -3,6 +3,8 @@ import modelORdata.Orders;
 import modelORdata.Shwarma;
 import view.StoreView;
 
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
         OnlineStoreController onlineStoreController =new OnlineStoreController();
@@ -21,6 +23,7 @@ public class Main {
         }else {
             System.out.println("не шаурма :(");
         }
+        HashMap<Card<String,Integer>,Book<String>> hashMap = new HashMap<Card<K, V>, Book<T>>();
 
 
 
